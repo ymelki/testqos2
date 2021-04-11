@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+ <br />
+ 
+ 
+{{ form_start(form, {'action': path('bl')}) }}
+
+{{ form_widget(form)  }}
+<button type="submit" class="btn btn-primary">Ajouter produit au bon de livraison</button>
+{{ form_end(form)  }}
+
+
+{% if items | length > 0 %}
+<div align="right"><a   href="generer" class="btn btn-primary">CREER MA COMMANDE >></button></a>
+<table class="table">
+ <thead>
+   <tr>
+     <th>Numéro</th> 
+     <th>Date</th>
+     <th>Produit</th>
+     <th>Correction</th>
+     <th>Porteur</th>
+     <th>Quantité</th>
+     <th>Supprimer</th>
+ </thead>
+ <tbody>
+  {% for key, item in items %}
+  <tr>
+    <td>{{loop.index}}</td>
+    <td>{{item.getLivraison().getDate()}}</td>
+    <td>{{item.produit}}</td>
+    <td>{{item.designation}}</td>
+    <td>{{item.porteur}}</td>
+    <td>{{item.quantite}}</td>
+    <td><a href="{{ path('remove', {'id':key}) }}" class="btn btn-danger btn-sm">
+      <icon class="fas fa-trash"></i>
+      </a>
+    </td>
+  </tr>
+
+  {% endfor %}
+
+ </tbody>
+</table>
+
+{% else %}
+<p> Pas de produit</a>
+
+{% endif %}
+
+{% endblock %}

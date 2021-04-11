@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MonblController!{% endblock %}
+
+{% block body %}
+<br />
+{{ form_start(form)  }}
+
+{{ form_widget(form)  }}
+<button type="submit" class="btn -btn-success">Recherche</button>
+{{ form_end(form)  }}
+
+{% if items | length > 0 %}
+<table class="table">
+ <thead>
+   <tr>
+     <th>Numéro</th> 
+     <th>Date</th>
+     <th>Numero de B.L.</th>
+     <th>Numero de commande</th>
+     <th>Porteur</th>
+     <th>Client</th>
+     <th>Voir le BL</th>
+ </thead>
+ <tbody>
+  {% for item in items %}
+  <tr>
+    <td>{{loop.index}}</td>
+    <td>{{item.getLivraison().getDate()}}</td>
+    <td>{{item.livraison}}</td>
+    <td>{{item.getordersa}}</td>
+    <td>{{item.porteur}}</td>
+    <td>{{item.getUserInfo().getMagasin()}} </td>
+    <td><a href={{path('download', {'id':item.getordersa})}}>Bon de livraison    
+      </a>
+    </td>
+  </tr>
+
+
+  {% endfor %}
+
+ </tbody>
+</table>
+
+{% else %}
+<p> Pas de B.L</a>
+
+{% endif %}
+
+
+
+{% endblock %}

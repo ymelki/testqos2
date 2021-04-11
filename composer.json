@@ -1,0 +1,16 @@
+{
+    "require": {
+        "symfony/apache-pack": "^1.0",
+        "sensiolabs/security-checker": "^6.0",
+        "symfony/flex": "^1.11",
+        "symfony/requirements-checker": "^2.0",
+        "symfony/dotenv": "^5.2",
+        "symfony/console": "^5.2",
+        "deployer/deployer": "^6.8"
+    },
+    "scripts": {
+        "auto-scripts": {
+            "requirements-checker": "script"
+        }
+    }
+}

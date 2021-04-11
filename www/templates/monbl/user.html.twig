@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MonblController!{% endblock %}
+
+{% block body %}
+<br />
+
+{% if items | length > 0 %}
+<table class="table">
+ <thead>
+   <tr>
+     <th>Numéro</th> 
+     <th>Email</th>
+     <th>Prénom</th>
+     <th>Nom</th>
+     <th>Adresse</th>
+     <th>cp</th> 
+     <th>ville</th>
+     <th>tel</th>
+     <th>Magasin</th>
+     <th>Code client</th>
+ </thead>
+ <tbody>
+  {% for item in items %}
+  <tr>
+    <td>{{loop.index}}</td>
+    <td>{{item.Email}}</td>
+    <td>{{item.Prenom}}</td>
+    <td>{{item.nom}}</td>
+    <td>{{item.adresse}}</td>
+    <td>{{item.cp}}</td>
+    <td>{{item.ville}}</td>
+    <td>{{item.tel}}</td>
+    <td>{{item.Magasin}}</td>
+    <td>{{item.CodeClient}}</td>
+  </tr>
+
+
+  {% endfor %}
+
+ </tbody>
+</table>
+
+{% else %}
+<p> Pas de B.L</a>
+
+{% endif %}
+
+
+
+{% endblock %}

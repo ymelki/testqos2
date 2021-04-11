@@ -1,0 +1,8 @@
+Order allow,deny
+Allow from all
+
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/www/public/
+RewriteRule ^(.*)$ /public/$1 [L]
