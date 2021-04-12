@@ -1,17 +1,3 @@
-dpkg -l | grep -i php
-#1611507071
-composer install --no-dev --optimize-autoloader
-#1611507077
-composer require symfony/flex
-#1611507087
-php /homez.112/hephilenrd/www/bin/console php  assets:install
-#1611507097
-composer require sensiolabs/security-checker
-#1611507105
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611507115
-composer update
-#1611507132
 alias composer='/homez.112/hephilenrd/composer.phar'
 #1611507135
 composer update
@@ -996,4 +982,18 @@ git add .
 #1618247233
 git push -u live20 master
 #1618247247
+git push live20 master
+#1618249795
+git push live20 master
+#1618249830
+git remote add live20 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618249839
+git push -u live20 master
+#1618249847
+git add .
+#1618249856
+hephilenrd@ssh01.cluster023.gra.hosting.ovh.net
+#1618249861
+git commit -m "Premier déploiement avec git"
+#1618249870
 git push live20 master
