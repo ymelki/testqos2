@@ -952,3 +952,37 @@ git push live2 master
 git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
 #1618175219
 git add.
+#1618212669
+pwd
+#1618212671
+cd ..
+#1618212720
+pwd
+#1618212724
+ls
+#1618212755
+git init --bare hephilenrd.git
+#1618212767
+cd --bare site-perso.gitcd hephilenrd
+#1618212771
+cd hephilenrd
+#1618212772
+ll
+#1618212774
+ls
+#1618212781
+git init
+#1618212793
+git add.
+#1618212815
+git add .
+#1618212861
+git commit -am "ajoute la page d'accueil"
+#1618212877
+git push origin master
+#1618212943
+git remote -v
+#1618213005
+git remote add origin /homez.112/hephilenrd/www/
+#1618213009
+git push origin master
