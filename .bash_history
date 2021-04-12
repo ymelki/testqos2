@@ -924,3 +924,31 @@ $ git add .
 git
 #1618174555
 git add .
+#1618174898
+git add .
+#1618174966
+cd /homez.112/hephilenrd
+#1618174970
+git init
+#1618174993
+git add .
+#1618175003
+git add .
+#1618175032
+git commit -m "initial commit"
+#1618175063
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618175071
+git remote add live ssh://hephilenrd@ssh.cluster023.hosting.ovh.net/homez.112/hephilenrd/www/
+#1618175077
+git push -u live2 master
+#1618175153
+git push live2 master
+#1618175172
+git push live2 master
+#1618175179
+git push live2 master
+#1618175200
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618175219
+git add.
