@@ -1,229 +1,3 @@
-vim .htaccess 
-#1502210985
-vim .htaccess 
-#1502211122
-vim .htaccess 
-#1502211485
-vim .htaccess 
-#1611148752
-ll
-#1611148753
-dir
-#1611148765
- php bin/console cache:clear --env=prod 
-#1611148783
-php
-#1611148790
-sfd
-#1611148830
-mkdir lens
-#1611148833
-dir
-#1611149206
-composer require symfony/apache-pack
-#1611149241
-php --version
-#1611149252
-alias php='/usr/local/php8.0/bin/php'
-#1611149276
-curl -sS https://getcomposer.org/installer | php
-#1611149295
-php
-#1611149337
-unalias php
-#1611149344
-composer require symfony/apache-pack
-#1611149353
-php --version
-#1611149359
-curl -sS https://getcomposer.org/installer | php
-#1611149514
-composer require symfony/apache-pack
-#1611149519
-composer
-#1611149526
-Composer
-#1611149561
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-#1611149576
-php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-#1611149576
-php composer-setup.php
-#1611149579
-php -r "unlink('composer-setup.php');"
-#1611149585
-composer
-#1611149665
-dir
-#1611149673
-composer.phar
-#1611149737
-composer.phar install
-#1611149749
-cd..
-#1611149752
-cd ..
-#1611149754
-dir
-#1611149757
-cd ..
-#1611149759
-dir
-#1611149763
-dir
-#1611149773
-cd hephilenrd
-#1611149776
-dir
-#1611149789
-pwd
-#1611149803
-cd  /homez.112
-#1611149805
-dir
-#1611149862
-curl -sS https://getcomposer.org/installer | php
-#1611149869
-dir
-#1611149874
-cd hephilenrd
-#1611149875
-dir
-#1611149879
-curl -sS https://getcomposer.org/installer | php
-#1611149889
-mv composer.phar /usr/local/bin/composer
-#1611149925
-dir
-#1611149927
-pwd
-#1611149960
-alias composer='php ~/homez.112/hephilenrd/composer.phar'
-#1611149964
-composer
-#1611149976
-dir
-#1611149982
-composer.phar
-#1611150001
-alias composer='php /homez.112/hephilenrd/composer.phar'
-#1611150005
-composer
-#1611150028
-composer require symfony/apache-pack
-#1611150302
-d
-#1611152893
-apt-get install git
-#1611152898
-git status
-#1611152908
-git
-#1611153148
-dir
-#1611153154
-cd www
-#1611153156
-dir
-#1611153184
-git init -barre
-#1611153193
-git init -bare
-#1611153205
-git init --bare
-#1611153244
-dir
-#1611153249
-cd hooks
-#1611153250
-dir
-#1611153252
-cd recerive
-#1611153270
-nano post -receive
-#1611153290
-nano post --receive
-#1611153462
-nano post-receive
-#1611153642
-pwd
-#1611153672
-dir
-#1611153676
-cd ..
-#1611153677
-dir
-#1611153687
-cd ..
-#1611153689
-dir
-#1611153693
-cd www
-#1611153741
-pwd
-#1611153791
-cd hook
-#1611153793
-dir
-#1611153796
-cd hooks
-#1611153797
-dir
-#1611153805
-nano post-receive
-#1611153867
-chmod +x post-receive
-#1611154256
-dir
-#1611154258
-cd www
-#1611154259
-dir
-#1611154388
-mkdir /var
-#1611154391
-cd var
-#1611154402
-mkdir var
-#1611154408
-cd var
-#1611154431
-cd ..
-#1611154432
-dir
-#1611154435
-cd ..
-#1611154436
-dir
-#1611154441
-cd www
-#1611154445
-cd var
-#1611154448
-mkdir git
-#1611154454
-mkdir project.git
-#1611154454
-cd project.git
-#1611154455
-git init --bare
-#1611154468
-cd  hooks
-#1611154469
-nano post-receive
-#1611154480
-pws
-#1611154481
-pwd
-#1611154576
-nano post-receive
-#1611154591
-chmod +x post-receive
-#1611155664
-cd /homez.112/hephilenrd/www/
-#1611155671
-composer update
-#1611155682
 php composer update
 #1611155697
 cd ..
@@ -997,3 +771,229 @@ ssh hephilenrd@ssh.cluster023.hosting.ovh.net
 ssh hephilenrd@ssh.cluster023.hosting.ovh.net
 #1618220253
 exit
+#1618242653
+pwd
+#1618242670
+mkdir -p $HOME/depot_git
+#1618242676
+cd $HOME/depot_git
+#1618242681
+git init --bare
+#1618242741
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618242747
+git push -u live2 master
+#1618242833
+git commit -m "Premier déploiement avec git"
+#1618242840
+pwd
+#1618242870
+touch initial
+#1618242874
+git add initial
+#1618242886
+pwd
+#1618242892
+ls
+#1618242902
+cd branches
+#1618242903
+ls
+#1618242912
+git add initial
+#1618242950
+cd ..
+#1618242951
+c d..
+#1618242953
+cd ..
+#1618242955
+lds
+#1618242957
+ls
+#1618242959
+cd www
+#1618242993
+git init --bare
+#1618243003
+cd ..
+#1618243004
+ld
+#1618243005
+ls
+#1618243016
+cd git
+#1618243020
+cd ..
+#1618243021
+ls
+#1618243028
+cd hephilenrd
+#1618243030
+git init --bare
+#1618243048
+touch initial
+#1618243052
+git add initial
+#1618243055
+git commit -m "initial commit"
+#1618243062
+git push -u origin master
+#1618243202
+git config receive.denyCurrentBranch ignore
+#1618243211
+git push -u origin master
+#1618243220
+git config receive.denyCurrentBranch ignore
+#1618243224
+git push -u origin master
+#1618243355
+git reset --hard
+#1618243360
+git push -u origin master
+#1618243394
+git config receive.denyCurrentBranch refuse
+#1618243396
+git push -u origin master
+#1618243409
+git status
+#1618243430
+git add.
+#1618243434
+gitt .add
+#1618243438
+git .add
+#1618243442
+git add
+#1618243446
+git add.
+#1618243454
+git add .
+#1618243460
+git push -u origin master
+#1618243469
+git statut
+#1618243471
+git status
+#1618243566
+git checkout
+#1618243574
+git push -u origin master
+#1618243583
+git checkout -b temp
+#1618243593
+git checkout master
+#1618243597
+git branch -d temp
+#1618243605
+git push -u origin master
+#1618243657
+git config receive.denyCurrentBranch refuse
+#1618243659
+pwd
+#1618243662
+cd wwww
+#1618243666
+cd www
+#1618243675
+git config receive.denyCurrentBranch refuse
+#1618243679
+git config receive.denyCurrentBranch ignore
+#1618243683
+git push -u origin master
+#1618243689
+cd ..
+#1618243690
+cd ..
+#1618243695
+ls
+#1618243700
+cd hephilenrd
+#1618243703
+git push -u origin master
+#1618243741
+git add .
+#1618243747
+git push live2 master
+#1618243818
+git push live2 master
+#1618243908
+git commit -m "Premier déploiement avec git"
+#1618243914
+git push live2 master
+#1618244081
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618244094
+git push -u live2 master
+#1618244128
+pwd
+#1618244137
+cd hephilenrd
+#1618244147
+pwd
+#1618244149
+ls
+#1618244158
+cd www
+#1618244159
+cd var
+#1618244160
+ls
+#1618244168
+project.git
+#1618244232
+git push -u live2 master
+#1618244294
+git branch
+#1618244303
+git branch -mv origin master
+#1618244319
+cd ..
+#1618244320
+ls
+#1618244327
+git branch -mv origin master
+#1618244346
+git push -u live2 master
+#1618244363
+git push 
+#1618244389
+exit
+#1618244394
+quit
+#1618244402
+exit
+#1618244404
+ls
+#1618244448
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618244457
+git push -u live2 master
+#1618244468
+cd ..
+#1618244470
+git push -u live2 master
+#1618244485
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618244491
+git remote add live ssh://hephilenrd@ssh.cluster023.hosting.ovh.net/homez.112/hephilenrd/www/
+#1618244498
+git remote add origin https://github.com/example/example-project
+#1618244504
+git push -u live2 master
+#1618244510
+git add .
+#1618244517
+git commit -m "Premier déploiement avec git"
+#1618244528
+git push live2 master
+#1618244637
+git status
+#1618244656
+git add.
+#1618244658
+git add
+#1618244661
+git add .
+#1618244664
+git push live2 master
