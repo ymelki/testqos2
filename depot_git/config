@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "live2"]
+	url = ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+	fetch = +refs/heads/*:refs/remotes/live2/*
