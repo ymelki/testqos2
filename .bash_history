@@ -1,193 +1,3 @@
-php composer update
-#1611155697
-cd ..
-#1611155700
-composer
-#1611155702
-cd ..
-#1611155704
-composer
-#1611155747
-curl -sS http://getcomposer.org/installer | php -- --filename=composer
-#1611155752
-cd www
-#1611155754
-cd curl -sS http://getcomposer.org/installer | php -- --filename=composer
-#1611155757
-dir
-#1611155764
-cd hephilenrd
-#1611155765
-dir
-#1611155770
-composer 
-#1611155786
-php composer.phar self-update
-#1611155792
-php composer.phar update
-#1611155804
-php composer.phar install --no-dev --optimize-autoloader
-#1611155816
-php bin/console cache:clear --env=prod --no-debug
-#1611155828
-php bin/console assets:install
-#1611155903
-php composer.phar update
-#1611158216
-php composer.phar self-update
-#1611158225
-php composer.phar update
-#1611158238
-php composer.phar install --no-dev --optimize-autoloader
-#1611158581
- composer require symfony/apache-pack
-#1611158588
-php  composer require symfony/apache-pack
-#1611158604
-php  composer.phar require symfony/apache-pack
-#1611158725
-pwd
-#1611158961
-php  composer.phar require symfony/apache-pack
-#1611159027
-pwd
-#1611159033
-dir
-#1611159035
-cd www
-#1611159041
-php  composer.phar require symfony/apache-pack
-#1611159056
-php  composer.phar require symfony/apache-pack
-#1611159058
-cd ..
-#1611159061
-php  composer.phar require symfony/apache-pack
-#1611159105
-php  composer.phar require symfony/apache-pack www
-#1611159114
-php  composer.phar www require symfony/apache-pack
-#1611159124
-www/ php  composer.phar require symfony/apache-pack www
-#1611159128
-php  composer.phar www require symfony/apache-pack
-#1611159132
-php  composer.phar require symfony/apache-pack www
-#1611159138
-php  composer.phar require symfony/apache-pack
-#1611159371
-cd ..
-#1611159372
-cd ..
-#1611159373
-dir
-#1611159384
-cd ho*
-#1611159391
-cd /homez.112
-#1611159392
-dir
-#1611159399
-cd hephilenrd
-#1611159400
-dir
-#1611159403
-cd log
-#1611160000
-php --version
-#1611160006
-php app/console cache:clear --env=prod
-#1611160550
-dir
-#1611160552
-cd ..
-#1611160553
-dir
-#1611160786
-php app/console cache:clear --env=prod
-#1611160789
-pwd
-#1611160815
-php /homez.112/www/bin/console cache:clear --env=prod
-#1611160833
-php /homez.112/www/bin/console
-#1611160846
-cd /www/bin
-#1611160849
-dir
-#1611160857
-cd hephilenrd
-#1611160890
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161062
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161298
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161301
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161818
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161949
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161951
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161978
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611161979
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611162168
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611162294
-php /homez.112/hephilenrd/www/bin/console debug:router -e=prod
-#1611162864
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611162869
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611162933
-composer dump-env prod
-#1611162977
-alias composer='/homez.112/hephilenrd/composer.phar'
-#1611162979
-composer
-#1611162989
-composer dump-env prod
-#1611163008
-dir
-#1611163009
-cd www
-#1611163010
-dir
-#1611163014
-composer dump-env prod
-#1611163122
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611163205
-composer require symfony/requirements-checker
-#1611163267
-composer self-update
-#1611163267
-composer update
-#1611163276
-php composer install --no-dev --optimize-autoloader
-#1611163287
-composer install --no-dev --optimize-autoloader
-#1611163308
-	php /homez.112/hephilenrd/www/bin/console cache:clear --env=prod
-#1611163374
-composer require sensiolabs/security-checker
-#1611163612
-php /homez.112/hephilenrd/www/bin/console php  assets:install
-#1611163716
-composer dump-env prod
-#1611163740
-composer require symfony/flex
-#1611163761
-composer install --no-dev --optimize-autoloader
-#1611164126
-df
-#1611164127
-df -h
-#1611164159
 dpkg -l | grep -i php
 #1611507071
 composer install --no-dev --optimize-autoloader
@@ -997,3 +807,193 @@ git add
 git add .
 #1618244664
 git push live2 master
+#1618245070
+rsync -av ./ hephilenrd@ssh.cluster023.hosting.ovh.net:~/homez.112/hephilenrd/www --include=public/build --include=public/.htaccess --exclude-from=.gitignore --exclude=".*"
+#1618245214
+git commit -m "Premier déploiement avec git"
+#1618245228
+git push live2 master
+#1618245241
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618245246
+git push -u live2 master
+#1618245257
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618245263
+git remote add live ssh://hephilenrd@ssh.cluster023.hosting.ovh.net/homez.112/hephilenrd/www/
+#1618245271
+git remote add origin https://github.com/example/example-project
+#1618245281
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/ -f
+#1618245297
+#!/bin/sh
+#1618245303
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/ -f
+#1618245303
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/ -f
+#1618245313
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/ 
+#1618245322
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618245330
+listent
+#1618245336
+git push -u live2 master
+#1618245345
+git add .
+#1618245350
+git commit -m "Premier déploiement avec git"
+#1618245354
+git push live2 master
+#1618245377
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/var/project.git/ checkout -f
+#1618245385
+git push live2 master
+#1618245474
+ls
+#1618245476
+cd www
+#1618245477
+ls
+#1618245485
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618245493
+git push -u live2 master
+#1618245501
+git add .
+#1618245511
+hephilenrd@ssh01.cluster023.gra.hosting.ovh.net
+#1618245519
+git commit -m "Premier déploiement avec git"
+#1618245528
+git push live2 master
+#1618245656
+ssh -T git@github.com
+#1618245688
+ssh -T -p 443 git@ssh.github.com
+#1618245763
+ssh -T git@bitbucket.org or git pull
+#1618245779
+git push live2 master
+#1618246026
+git push live2 master
+#1618246045
+git push
+#1618246054
+git push live2
+#1618246062
+git push live
+#1618246068
+git push live master
+#1618246074
+git push live2 master
+#1618246109
+ls
+#1618246171
+git push origin --delete
+#1618246198
+git branch -D origin
+#1618246202
+git branch -D master
+#1618246210
+git branch -D live
+#1618246212
+git branch -D live2
+#1618246215
+cd ..
+#1618246218
+git branch -D master
+#1618246224
+ls
+#1618246242
+cd www
+#1618246243
+ls
+#1618246244
+cd var
+#1618246245
+ls
+#1618246252
+git branch -D live
+#1618246254
+git branch -D live2
+#1618246260
+cd project.git
+#1618246261
+ls
+#1618246268
+git branch -D live
+#1618246272
+git branch -D live2
+#1618246275
+cd ..
+#1618246278
+cd ..
+#1618246285
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618246320
+fatal: la distante live2 existe déjà.
+#1618246373
+git remote set-url live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618246380
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618246403
+git remote -v show
+#1618246448
+git remote add live3 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618246465
+git push -u live3 master
+#1618246525
+git push  live3 master
+#1618246532
+git add .
+#1618246537
+git commit -m "Premier déploiement avec git"
+#1618246546
+git push live3 master
+#1618246576
+cd ..
+#1618246577
+ls
+#1618246590
+git remote add live4 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618246595
+git push -u live4 master
+#1618246716
+git remote -v show
+#1618246755
+git --work-tree=/homez.112/hephilenrd/www/ --git-dir=/homez.112/hephilenrd/www/ -f
+#1618246777
+ls
+#1618246780
+pwd
+#1618246784
+cd www
+#1618246808
+git remote add live10 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618246816
+git push -u live10 master
+#1618246854
+git push origin master
+#1618246879
+git remote add origin https://github.com/example/example-project
+#1618247091
+git remote add origin https://github.com/ymelki/hephilens/
+#1618247103
+git remote add origin https://github.com/ymelki/hephilens/
+#1618247133
+git remote -v
+#1618247174
+git remote set-url origin https://github.com/ymelki/hephilens/
+#1618247194
+git remote add live20 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/depot_git
+#1618247199
+git push -u live10 master
+#1618247215
+git commit -m "Premier déploiement avec git"
+#1618247220
+git add .
+#1618247233
+git push -u live20 master
+#1618247247
+git push live20 master
