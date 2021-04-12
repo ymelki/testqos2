@@ -1,26 +1,3 @@
-#1502207063
-ls
-#1502207068
-cd www/
-#1502207143
-vim index.html
-#1502207671
-ls
-#1502208061
-git checkout https://elodiepeuvion@bitbucket.org/elodiepeuvion/hephilens.git
-#1502208078
-git clone https://elodiepeuvion@bitbucket.org/elodiepeuvion/hephilens.git
-#1502208249
-mv hephilens/ www/
-#1502208251
-ls
-#1502208259
-cd www/
-#1502208260
-ls
-#1502210522
-cd www/hephilens/
-#1502210528
 vim .htaccess 
 #1502210985
 vim .htaccess 
@@ -986,3 +963,37 @@ git remote -v
 git remote add origin /homez.112/hephilenrd/www/
 #1618213009
 git push origin master
+#1618214021
+git status
+#1618214034
+git add
+#1618214041
+git add .
+#1618214090
+git remote add live2 ssh://hephilenrd@ssh.cluster023.hosting.ovh.net//homez.112/hephilenrd/www/var/project.git/
+#1618214098
+git push -u live2 master
+#1618214213
+git push -u live2 master
+#1618214343
+git add .
+#1618214349
+git commit -m "Premier déploiement avec git"
+#1618214354
+git push live2 master
+#1618214411
+git push live master
+#1618220123
+git push origin master
+#1618220204
+pwd
+#1618220213
+git init --bare
+#1618220225
+git push -u live2 master
+#1618220246
+ssh hephilenrd@ssh.cluster023.hosting.ovh.net
+#1618220250
+ssh hephilenrd@ssh.cluster023.hosting.ovh.net
+#1618220253
+exit
