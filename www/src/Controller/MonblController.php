@@ -16,6 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class MonblController extends AbstractController
 {
+    // je teste la page de checkout
     /**
      * @Route("/monbl", name="monbl")
      */
