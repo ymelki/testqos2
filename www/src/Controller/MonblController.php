@@ -21,7 +21,8 @@ class MonblController extends AbstractController
      */
     public function index(Request $request, EntityManagerInterface  $manager)
     {
-
+        //test
+        $test="rien";
         $Bl=new Bl();   
            
         $Bl->setDate(new \DateTime());
